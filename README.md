@@ -1,15 +1,15 @@
-# Tauri + Solid + Typescript
+# Tauri + Solid + Vike + Typescript
 
 This template should help get you started developing with Tauri, Solid and Typescript in Vite.
 
 **Technologies Used**:
 
-- Tauri (Go)
+- Tauri (Rust)
 - SolidJS
-- Vike (File Routing) - `vite build` will build static.
+- Vike (Filesystem Routing) - `vite build` will build static.
 - TailwindCSS
 - Extra things for DevX:
-  - Biome - ESLint and Prettier in one.
+  - Prettier + prettier-plugin-tailwindcss
   - Bun - Faster package manager 🥳
 
 ## Recommended IDE Setup
