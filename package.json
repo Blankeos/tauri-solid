@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "preview-mac": "./src-tauri/target/release/bundle/macos/tauri-solid.app/Contents/MacOS/tauri-solid"
   },
   "license": "MIT",
   "dependencies": {

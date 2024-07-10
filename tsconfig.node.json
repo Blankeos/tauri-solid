@@ -5,11 +5,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "@types/bun",
-      "vite-plugin-solid-svg/types-component-solid", // must be before vite/client
-      "vite/client" // Replaces the /// <reference types="vite/client" /> in vite-env.d.ts
-    ]
+    "strict": true
   },
   "include": ["vite.config.ts"]
 }

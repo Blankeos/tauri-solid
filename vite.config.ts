@@ -1,24 +1,24 @@
 // Icons
-import solidSvg from "vite-plugin-solid-svg";
+import solidSvg from 'vite-plugin-solid-svg';
 
 // Vike
-import vikeSolid from "vike-solid/vite";
-import vike from "vike/plugin";
+import vikeSolid from 'vike-solid/vite';
+import vike from 'vike/plugin';
 
 // Vite
-import { dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
-import { defineConfig } from "vite";
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { defineConfig } from 'vite';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const root = resolve(__dirname, ".");
+const root = resolve(__dirname, '.');
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  plugins: [vike(), vikeSolid(), solidSvg()],
+  plugins: [vike({ prerender: true }), vikeSolid(), solidSvg()],
   resolve: {
     alias: {
-      "@": resolve(root, "src"),
+      '@': resolve(root, 'src'),
     },
   },
 
@@ -32,7 +32,7 @@ export default defineConfig(async () => ({
     strictPort: true,
     watch: {
       // 3. tell vite to ignore watching `src-tauri`
-      ignored: ["**/src-tauri/**"],
+      ignored: ['**/src-tauri/**'],
     },
   },
 }));

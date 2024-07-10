@@ -12,6 +12,8 @@ This template should help get you started developing with Tauri, Solid and Types
   - Prettier + prettier-plugin-tailwindcss
   - Bun - Faster package manager 🥳
 
-## Recommended IDE Setup
+## Building for Production
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- `bun tauri build`.
+  - Installer is saved here: `./src-tauri/target/release/bundle/dmg/tauri-solid_0.0.0_aarch64.dmg`
+  - Binary is saved here: `./src-tauri/target/release/bundle/macos/tauri-solid.app/Contents/MacOS/tauri-solid` (You can run this without installing with `bun preview-mac`)
