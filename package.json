@@ -9,26 +9,27 @@
     "build": "vite build",
     "serve": "vite preview",
     "tauri": "tauri",
-    "preview-mac": "./src-tauri/target/release/bundle/macos/tauri-solid.app/Contents/MacOS/tauri-solid"
+    "preview-mac": "./src-tauri/target/release/bundle/macos/tauri-solid.app/Contents/MacOS/tauri-solid",
+    "outdated": "bunx npm-check-updates --format group --interactive"
   },
   "license": "MIT",
   "dependencies": {
-    "solid-js": "^1.7.8",
+    "solid-js": "^1.8.21",
     "@tauri-apps/api": "^1"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1",
     "@types/bun": "^1.1.6",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.2.2",
-    "vike": "^0.4.179",
-    "vike-solid": "^0.6.2",
-    "vite": "^5.3.1",
-    "vite-plugin-solid": "^2.8.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vike": "^0.4.191",
+    "vike-solid": "^0.7.2",
+    "vite": "^5.4.2",
+    "vite-plugin-solid": "^2.10.2",
     "vite-plugin-solid-svg": "^0.8.1"
   }
 }

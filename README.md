@@ -12,6 +12,11 @@ This template should help get you started developing with Tauri, Solid and Types
   - Prettier + prettier-plugin-tailwindcss
   - Bun - Faster package manager 🥳
 
+## Getting Started
+
+- `bun install` - installs all dependencies
+- `bun dev` - start the server
+
 ## Building for Production
 
 - `bun tauri build`.
